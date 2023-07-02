@@ -1,30 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fase 2</title>
     <style>
-        *{
+        body {
             text-align: center;
-            background-color: aqua;
-            color: black;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            background-color: aquamarine;
         }
     </style>
 </head>
+
 <body>
-    <h1>Bienvenido a mi sitio web</h1>
-    <h2>Proyecto de sitio web año:2023, periodo: 8-03</h2>
+    <header>
+        <h1>Flex Box</h1>
+        <nav>
+            <ul>
+                <li><a href="#Inicio"> Inicio </a></li>
+                <li><a href="#Temaseleccionado"> Tema seleccionado </a></li>
+                <li><a href="#Mockup"> Mockup </a></li>
+                <li><a href="#Acercade"> Acerca de </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Inicio">
+        <h2>¿Ques es el Flex Box?</h2>
+        <p>
+            El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de
+            layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar
+            las capacidades de alineación. Es un sistema de elementos flexibles que llega con la idea de olvidar estos
+            mecanismos y acostumbrarnos a una mecánica más potente, limpia y personalizable
+        </p>
+
+        <img src="imagenes/Flex Box.png" width="300" height="300" alt="Diferentes ubicaciones">
+
+    </section>
+
+    <!-- Este es el espacio del tema seleccano -->
     <hr>
-    <h3>Nombre: Jeycol Nicolas Jacanamijoy Delgado</h3>
-    <h3>Programa: Ingenieria Industrial</h3>
-    <h3>Fecha de creacion: 16 junio 2023</h3>
+    <section id="Temaseleccionado">
+        <h2> Los dos ejes de Flex Box</h2>
+
+        <p>
+            Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje
+            cruzado. El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a
+            este. Todo lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender cómo
+            trabajan desde el principio.
+
+        </p>
+
+        <h3> El eje princial </h3>
+
+        <p>
+            El eje principal está definido por flex-direction, que posee cuatro posibles valores: row, row-reverse,
+            column y column-reverse
+
+        </p>
+
+        <h3> El eje cruzadao </h3>
+
+        <p>
+            El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es
+            row o row-reverse el eje cruzado irá por las columnas.
+
+        </p>
+
+        <h3> Lineas de inicio a fin </h3>
+
+        <p>
+            Otra área vital de entendimiento es cómo flexbox no hace suposiciones sobre la manera de escribir del
+            documento. En el pasado, CSS estaba muy inclinado hacia el modo de escritura horizontal y de izquierda a
+            derecha. Los métodos modernos de layout acogen la totalidad de modos de escritura así que no es necesario
+            asumir que una línea de texto empezará arriba del documento y correrá de izquierda a derecha, con nuevas
+            líneas dispuestas una abajo de la otra.
+
+        </p>
+
+    </section>
     <hr>
-    <p>Mis datos de contacto son: <br>
-        Skype: live:..cid.3e9c9be94347d1b7 <br>
-        Telefono: 3155844199 <br>
-        Email: nicolas.jacanamijoy@gmail.com <br>
-    </p>    
+    <section id="Mockup">
+        <h3> Mockup de la pagina</h3>
+        <img src="imagenes/Mockup....drawio.png" width="500" height="600" alt="maqueta con el tema Flex Box">
+    </section>
+    <hr>
+
+    <section id="Acercade">
+        <h3> Acerca de </h3>
+
+        <h5> Nicolas Jacanamijoy </h5>
+        <h5> jnjacanamijoyd@unadvirtual.edu.co </h5>
+
+    </section>
+
+    <footer>
+        <p> Esta pagina fue elaborada por Nicolas Jacanamijoy </p>
+        <p> Estudiante de Ingenieria Industrial </p>
+        <p> Junio 30 de 2023</p>
+
+    </footer>
+
 </body>
 
 </html>
